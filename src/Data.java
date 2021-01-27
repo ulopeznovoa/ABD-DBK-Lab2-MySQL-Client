@@ -11,21 +11,7 @@ public class Data {
     String sentence;
     ResultSet rs;
 
-    public Data() {
-
-        // Open connection
-
-        try {
-            conn = DriverManager.getConnection(
-                    "jdbc:mysql://u000host.ehu.eus:8306",
-                    "dummy", "foobar2020");
-            conn.setAutoCommit(true);
-            st = conn.createStatement();
-
-        } catch (SQLException e) {
-
-            e.printStackTrace();
-        }
+    public Data() { 
 
     }
 
@@ -37,15 +23,6 @@ public class Data {
         conn.setAutoCommit(true);
         st = conn.createStatement();
 
-    }
-
-    /*
-    public static void main(String[] args) {
-        // TODO Auto-generated method stub
-
-        Data myData = new Data();
-        System.out.println("MySQL is cute!!!");
-
-    } */
+    } 
 
 }
